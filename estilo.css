@@ -1,0 +1,219 @@
+/*Parte Generalizada*/
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background: #fff url(imagens/fundo.png) repeat-x;
+}
+#container{
+    width: 750px;
+    margin: 0 auto;
+}
+#container-rodape{
+    background: #294c71;
+    padding: 20px;
+}
+
+
+/*Configurações Padrões*/
+ul{
+    margin:0;
+    padding:0;
+    list-style: none;   
+}
+img{
+    width: 100%;
+    border: 2px solid #dfdfdf;
+}
+h2{
+    background: #294c71;
+    color:white;
+    padding: 5px 0 5px 5px;
+}
+label{
+    display: block;
+    cursor: pointer;
+}
+input{
+    padding: 5px;
+}
+
+
+/*Área do Cabeçalho*/
+#topo{
+    padding-top: 20px;
+    height: 180px;
+    background: url(imagens/detalhe-topo.png) no-repeat right top;
+}
+#topo ul{
+    float: left;
+    margin-top: 30px;
+    background: #b10333;
+}
+#topo ul li{
+    float: left;
+}
+#topo ul li a{
+    font-size: 1em;
+    padding: 0.32em 1.18em;
+    line-height: 2em;
+    display: block;
+    color: white;
+    text-decoration: none;
+    background: url(imagens/divisor.png) no-repeat left center;
+}
+#topo ul li a:hover{
+    color: #69001d
+}
+#topo ul .primeiro a{
+    background: none;
+}
+.logo{
+    width: 152px;
+    height: 66px;
+    background: url(imagens/logo.png) no-repeat center;
+    text-indent: -3000px;/*joga o conteudo pra esquerda 3000 pixels*/
+}
+    /*Deixar menu selecionado*/
+body.home .navegacao a#home,
+body.brasil .navegacao a#brasil,
+body.fotos .navegacao a#fotos{
+    color:white;
+    background: #de003e;
+    cursor:text;
+}
+
+
+/*Área de Conteúdo(Principal)*/
+#principal{
+    margin-top: 60px;
+    background: #f5f5f5;
+}
+#principal img{
+    display: block;
+    width: 98%;
+    margin-top: 5px;
+    border: 3px solid #dfdfdf;
+}
+#principal p{
+    padding-left: 3px;
+}
+    /*Área Principal - Fundo dos Containers*/
+.caixa{
+    background: #f3f3f3 url(imagens/fundo-caixa.png);
+    margin: 10px 0;
+    padding: 5px;
+}
+.caixa-conteudo{
+    margin: 5px 0;
+    padding: 5px;
+    padding-top: 10px;
+    background: #f3f3f3;
+}
+
+/*Área de Conteúdo(Principal) Primária*/
+    /*Espaçamento dos containers da área principal*/
+#primario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 195px;
+}
+#duas-colunas #primario{
+    width: 555px;
+    margin: 0 0 20px 195px;
+}
+#uma-coluna #primario{
+    width: 750px;
+    margin: 0 0 20px 0px;
+}
+
+/*Área de Conteúdo(Principal) Secundaria*/
+#secundario{
+    width: 270px;
+    float: left;
+    margin: 0 0 20px 15px;
+}
+
+/*Área Principal Parte de Cima(Noticia Comum)*/
+#noticia-comum h3{
+    font-size: 0.95em;
+    display: inline;
+    background: #b10333;
+    color: white;
+    padding: 5px;
+}
+#noticia-comum a{
+    color: #b10333;
+    padding-left: 3px;
+}
+
+/*Área Principal Parte de Baixo(Lista Noticias)*/
+#lista-noticias li{
+    border-bottom: 1px solid #ccc;
+    height: 70px;
+    padding: 2px;
+}
+#lista-noticias li a{
+    text-decoration: none;
+}
+#lista-noticias li:hover{
+    background: #dfdfdf;
+    cursor: pointer;
+}
+#lista-noticias li a img{
+    width: 80px;
+    float: left;
+    margin-right: 5px;
+}
+#lista-noticias li a h3{
+    font-size: 0.98em;
+    font-weight: bold;
+    color: #3e7ab9;
+}
+#lista-noticias li a p{
+    font-size: 0.85em;
+    color: rgb(22, 22, 22);
+}
+
+/*Área de Conteúdo(Principal) Lateral*/
+#lateral{
+    width: 180px;
+    float: left;
+    margin: 0 0 20px -750px;
+}
+    /*Área Lateral - Hyperlinks*/
+#lateral ul li a{
+    padding:3px;
+    text-decoration: none;
+    color: black;
+    line-height: 30px;
+    display: block;
+}
+#lateral ul li a:hover{
+    background: url(imagens/marcador.png) no-repeat left center;
+    padding-left: 20px;
+    color: #a1a1a1;
+}
+    /*Área Lateral - Form*/
+#digitar input{
+    width: 150px;
+}
+#botao{
+    margin: 5px 0;
+}
+#botao input{
+    color: white;
+    background: #de003e;
+    border: 2px solid #b10333;
+}
+
+
+/*Área do Rodapé*/
+#rodape{
+    width: 750px;
+    color:white;
+    margin: 0 auto;
+    text-align: center;
+}
